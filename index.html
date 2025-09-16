@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Don Pepero Patriótico - Botillería Chilena</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0033A0, #FFFFFF, #CE1126);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            border: 3px solid #CE1126;
+        }
+        
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #CE1126;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #0033A0;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .loading-text {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #CE1126;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .chile-flag {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fdonpepero1936back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="logo">
+            <span class="chile-flag">🇨🇱</span>
+            Don Pepero Patriótico
+            <span class="chile-flag">🇨🇱</span>
+        </div>
+        <div class="subtitle">Tu Botillería Chilena de Confianza</div>
+        <div class="loading-text">Redirigiendo a la página principal...</div>
+        <div class="spinner"></div>
+        <p style="color: #666; font-size: 0.9em; margin-top: 20px;">
+            ¡Celebremos juntos las fiestas patrias con los mejores productos!
+        </p>
+    </div>
+
+    <script>
+        // Redirect to the homepage after 2 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/homepage_chilean_botiller_a.html';
+        }, 2000);
+        
+        // Fallback redirect on click
+        document.addEventListener('click', function() {
+            window.location.href = 'pages/homepage_chilean_botiller_a.html';
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
